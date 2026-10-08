@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Tilley — Developer &amp; Designer</title>
+  <meta name="description" content="Daniel Tilley — a developer and designer crafting modern digital experiences." />
+  <meta property="og:title" content="Daniel Tilley" />
+  <meta property="og:description" content="Developer &amp; designer crafting modern digital experiences." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9A%80%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="#home">DT<span>.</span></a>
+    <nav class="nav__links">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav__theme" id="themeToggle" aria-label="Toggle theme">☾</button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <p class="hero__eyebrow reveal">👋 Hey, I'm</p>
+      <h1 class="hero__title reveal">Daniel <span class="grad">Tilley</span></h1>
+      <p class="hero__subtitle reveal">
+        I build <span class="typed" id="typed"></span><span class="caret" aria-hidden="true"></span>
+      </p>
+      <p class="hero__body reveal">
+        Developer &amp; designer crafting fast, beautiful, and human-centered digital experiences.
+      </p>
+      <div class="hero__cta reveal">
+        <a class="btn btn--primary" href="#contact">Let's talk</a>
+        <a class="btn btn--ghost" href="#work">See my work</a>
+      </div>
+      <div class="hero__scroll reveal" aria-hidden="true">
+        <span class="mouse"><span class="mouse__dot"></span></span>
+        <span class="hero__scroll-label">scroll</span>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>JavaScript</span><span>React</span><span>TypeScript</span><span>CSS</span><span>Node.js</span><span>Design Systems</span><span>Motion</span><span>Accessibility</span>
+        <span>JavaScript</span><span>React</span><span>TypeScript</span><span>CSS</span><span>Node.js</span><span>Design Systems</span><span>Motion</span><span>Accessibility</span>
+      </div>
+    </div>
+
+    <!-- WORK -->
+    <section class="section" id="work">
+      <div class="section__head reveal">
+        <p class="section__kicker">Selected Work</p>
+        <h2 class="section__title">Things I've <span class="grad">built</span></h2>
+      </div>
+      <div class="grid">
+        <article class="card reveal" tabindex="0">
+          <div class="card__media card__media--1"></div>
+          <div class="card__body">
+            <span class="card__tag">Web App</span>
+            <h3 class="card__title">Project Aurora</h3>
+            <p class="card__text">A real-time collaboration canvas with presence, cursors, and offline sync.</p>
+            <a class="card__link" href="#">View case study →</a>
+          </div>
+        </article>
+        <article class="card reveal" tabindex="0">
+          <div class="card__media card__media--2"></div>
+          <div class="card__body">
+            <span class="card__tag">Design System</span>
+            <h3 class="card__title">Pulse UI</h3>
+            <p class="card__text">An accessible, themeable component library used by 20+ product teams.</p>
+            <a class="card__link" href="#">View case study →</a>
+          </div>
+        </article>
+        <article class="card reveal" tabindex="0">
+          <div class="card__media card__media--3"></div>
+          <div class="card__body">
+            <span class="card__tag">Mobile</span>
+            <h3 class="card__title">Habit Loop</h3>
+            <p class="card__text">A streak-focused habit tracker with gentle, motivating micro-interactions.</p>
+            <a class="card__link" href="#">View case study →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section--alt" id="about">
+      <div class="section__head reveal">
+        <p class="section__kicker">About</p>
+        <h2 class="section__title">Nice to <span class="grad">meet you</span></h2>
+      </div>
+      <div class="about">
+        <div class="about__portrait reveal">
+          <div class="about__portrait-inner">DT</div>
+        </div>
+        <div class="about__copy">
+          <p class="reveal">
+            I'm a developer and designer based in the UK, focused on the intersection of
+            clean code and considered design. I care about the small details — easing, contrast,
+            and performance — that make software feel effortless.
+          </p>
+          <p class="reveal">
+            When I'm not shipping, I'm usually exploring type, animation, or the next side project.
+          </p>
+          <div class="stats reveal">
+            <div class="stat"><span class="stat__num" data-count="8">0</span><span class="stat__label">Years coding</span></div>
+            <div class="stat"><span class="stat__num" data-count="40">0</span><span class="stat__label">Projects shipped</span></div>
+            <div class="stat"><span class="stat__num" data-count="12">0</span><span class="stat__label">Happy clients</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="section__head reveal">
+        <p class="section__kicker">Contact</p>
+        <h2 class="section__title">Let's build something <span class="grad">great</span></h2>
+      </div>
+      <p class="contact__lead reveal">Have a project in mind, or just want to say hi?</p>
+      <a class="btn btn--primary reveal" href="mailto:hello@danieltilley.co.uk">hello@danieltilley.co.uk</a>
+      <div class="socials reveal">
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://x.com/" target="_blank" rel="noopener">X / Twitter</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Daniel Tilley. Built with care.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
